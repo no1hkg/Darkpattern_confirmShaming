@@ -39,13 +39,13 @@
     <tbody>
         <tr>
             <td>Product 1</td>
-            <td>$10.00</td>
+            <td>1000.00 rs</td>
             <td><input type="checkbox" id="item1" onclick="handleCheckbox(this)"> Add</td>
         </tr>
         <tr>
-            <td>Product 2</td>
-            <td>$20.00</td>
-            <td><input type="checkbox" id="item2" onclick="handleCheckbox(this)"> Add</td>
+            <td>Tip</td>
+            <td>$20 rs</td>
+            <td><input type="checkbox" id="item2" onclick="handleCheckbox(this)" checked> Add</td>
         </tr>
         <!-- Add more products as needed -->
     </tbody>
@@ -61,9 +61,9 @@
     function handleCheckbox(checkbox) {
         var itemName = checkbox.parentNode.parentNode.cells[0].innerText;
         if (checkbox.checked) {
-            alert("Added to cart: " + itemName);
+           
         } else {
-            alert("Removed from cart: " + itemName);
+            alert("No, I don't want to tip. I'm okay with being a cheapskate and not appreciating the hard work of our drivers.");
         }
 
         // You can update the order summary or perform other actions here
